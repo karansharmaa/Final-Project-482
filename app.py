@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify
 #from your_nlp_module import get_review_summary, get_review_rating  # assuming you have a function to handle processing
+from flask_cors import CORS
+CORS(app)
 
 app = Flask(__name__)
 
