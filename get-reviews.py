@@ -16,7 +16,8 @@ def process_movie_data(movie_name, movie_year):
             
             # Get an array of the first 3 reviews
             reviews = reviews_df.head(3)[['rating', 'date', 'title', 'review']].to_dict('records')
-            
+            # get all reviews
+            # reviews = reviews_df[['rating', 'date', 'title', 'review']].to_dict('records')
             return reviews
         else:
             return None
@@ -59,7 +60,7 @@ def get_movie_info(movie_data):
 # Example: Load movie data for a specific genre
 movie_data = pd.read_csv("Dataset/1_movies_per_genre/Action.csv")  # Example for Action genre
 
-# Get the movie info for the first 2 movies (or adjust number for more)
+# Get the movie info for the movies
 movie_info = get_movie_info(movie_data)
 
 # Print the output for each movie
@@ -71,7 +72,8 @@ for movie in movie_info:
     if isinstance(movie['reviews'], list):
         for review in movie['reviews']:
             # Print only the first 200 characters of the review
-            snippet = review['review'][:200] + '...' if len(review['review']) > 200 else review['review']
+            # snippet = review['review'][:200] + '...' if len(review['review']) > 200 else review['review']
+            snippet = review['review']
             print(f"  - Rating: {review['rating']}, Date: {review['date']}")
             print(f"    Title: {review['title']}")
             print(f"    Review: {snippet}\n")
