@@ -41,10 +41,11 @@ Tomasz Grzesik 300171377 Karan Sharma 300192685
      ```
 
 
-### Dataset:
-Pal, Aditya. “IMDB Movie Reviews Dataset.” IEEE DataPort, IEEE, 10 Dec. 2020, ieee-dataport.org/open-access/imdb-movie-reviews-dataset. 
+# Dataset:
+Pal, Aditya. “IMDB Movie Reviews Dataset.” *IEEE DataPort*, IEEE, 10 Dec. 2020, [ieee-dataport.org/open-access/imdb-movie-reviews-dataset](https://ieee-dataport.org/open-access/imdb-movie-reviews-dataset).
 
-### Citations:
-“Python: Sentiment Analysis Using Vader.” GeeksforGeeks, GeeksforGeeks, 7 Oct. 2021, www.geeksforgeeks.org/python-sentiment-analysis-using-vader/. 
-“Welcome to Vadersentiment’s Documentation!¶.” Welcome to VaderSentiment’s Documentation! - VaderSentiment 3.3.1 Documentation, vadersentiment.readthedocs.io/en/latest/. Accessed 26 Nov. 2024. 
+# Citations:
+- “Python: Sentiment Analysis Using Vader.” *GeeksforGeeks*, GeeksforGeeks, 7 Oct. 2021, [www.geeksforgeeks.org/python-sentiment-analysis-using-vader/](https://www.geeksforgeeks.org/python-sentiment-analysis-using-vader/).
+- “Welcome to Vadersentiment’s Documentation!¶.” *VaderSentiment 3.3.1 Documentation*, VaderSentiment, [vadersentiment.readthedocs.io/en/latest/](https://vadersentiment.readthedocs.io/en/latest/). Accessed 26 Nov. 2024.
+
 
