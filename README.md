@@ -10,7 +10,7 @@ Tomasz Grzesik 300171377 Karan Sharma 300192685
      ```
 
 2. **Download the Dataset**
-   - Download the dataset (https://ieee-dataport.org/open-access/imdb-movie-reviews-dataset)and download it in the project repository under a folder named `/Dataset`.
+   - Download the dataset (https://ieee-dataport.org/open-access/imdb-movie-reviews-dataset) and download it in the project repository under a folder named `/Dataset`.
 
 3. **(Optional) Create a Virtual Environment (Recommended)**
    - It's recommended to create a virtual environment to manage dependencies.
