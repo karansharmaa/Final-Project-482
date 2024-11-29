@@ -7,7 +7,7 @@ Andrew Meier ____________ Kabir LastName ___________
 1. **Clone the Repository**
    - Clone the project repository to your local machine using the following command:
      ```bash
-     git clone <repository_url>
+     git clone (https://github.com/karansharmaa/Final-Project-482.git)
      ```
 
 2. **Download the Dataset**
