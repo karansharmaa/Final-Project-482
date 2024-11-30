@@ -3,30 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Review Generator</title>
+    <title>Media Review Aggregator</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+   
 </head>
 <body>
-    <div class="container">
-        <h1>Is This Movie Worth Watching?</h1>
+    <header>
+        <h1 class="logo">Media Reviews</h1>
+    </header>
+    <main>
+        <div class="main">
+            <h2>Your Favorite Media, Reviewed</h2>
+            <p>Explore aggregated reviews and ratings for your favorite movies.</p>
+        </div>
 
-        <!-- This code block handles the movie selection -->
-        <form id="movie-form">
-            <label for="movieSelect">Choose a Movie:</label>
-            <select id="movieSelect" name="movieSelect">
-                <option value="" disabled selected></option>
-            </select>
-            <button type="submit">Get Results</button>
-        </form>
+        <!-- Movie Selection -->
+        <div class="form-container">
+            <form id="movie-form">
+                <label for="movieSelect" class="form-label">Choose a Movie:</label>
+                <select id="movieSelect" name="movieSelect" class="form-input">
+                    <option value="" disabled selected>Choose a movie</option>
+                </select>
+                <button type="submit" class="btn">Get Results</button>
+            </form>
+        </div>
 
-        <!-- Sentiment analysis results show here -->
-        <div id="result">
-            <h2>What Do Reviewers Think?</h2>
+        <!-- Sentiment Analysis Results -->
+        <div id="result" class = "result-section">
+            <h2 id = "movieTitle">What Do Reviewers Think?</h2>
             <p id="movieName"></p>
             <p id="averageSentiment"></p>
             <p id="averageRating"></p>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p>© 2024/25 Team 4 - COMP482-AB1. All rights reserved.</p>
+    </footer>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
+
