@@ -13,6 +13,12 @@ Andrew Meier ____________ Kabir LastName ___________
 2. **Download the Dataset**
    - Download the dataset (https://ieee-dataport.org/open-access/imdb-movie-reviews-dataset) and download it in the project repository under a folder named `/dataset`.
 
+3. **Install Dependencies:**
+   - Download the required dependencies by running command:
+      ```bash
+      pip install -r requirements.txt
+      ```
+    
 3. **(Not Required but Would Be Nice) Create a Virtual Environment**
    - It's recommended to create a virtual environment to manage dependencies.
      - Create a virtual environment:
@@ -39,7 +45,7 @@ Andrew Meier ____________ Kabir LastName ___________
 
 
 5. **Run the webpage**:
-   - Activate a live server by entering into your search bar:
+   - Activate a live server by entering into your desired browser's search bar:
       ```bash
       http://127.0.0.1:5000/
       ```
