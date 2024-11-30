@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Review Aggregator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Media Review Aggregator</h1>
+
+        <!-- Movie Selection -->
+        <form id="movie-form">
+            <label for="movieSelect">Choose a Movie:</label>
+            <select id="movieSelect" name="movieSelect"></select>
+            <button type="submit">Get Results</button>
+        </form>
+
+        <!-- Sentiment Analysis Results -->
+        <div id="result">
+            <h2>Sentiment Analysis</h2>
+            <p id="movieName"></p>
+            <p id="averageSentiment"></p>
+            <p id="averageRating"></p>
+        </div>
+    </div>
+
+    <script>
+        // Fetch and populate movie list
+        async function fetchMovies() {
+            try {
+                const response = await fetch('/get-movie-list');
+                const data = await response.json();
+
+                const movieSelect = document.getElementById('movieSelect');
+                for (const [id, movie] of Object.entries(data.movies)) {
+                    const option = document.createElement('option');
+                    option.value = id;
+                    option.textContent = movie;
+                    movieSelect.appendChild(option);
+                }
+            } catch (error) {
+                console.error('Error fetching movies:', error);
+                alert('Failed to load movies. Please try again.');
+            }
+        }
+
+        // Fetch sentiment analysis for the selected movie
+        document.getElementById('movie-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const movieId = document.getElementById('movieSelect').value;
+
+            try {
+                const response = await fetch('/get-sentiment', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ movie_id: movieId }),
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    alert(data.error);
+                    return;
+                }
+
+                // Update UI with simplified sentiment analysis results
+                document.getElementById('movieName').textContent = `Movie: ${data.movie_name}`;
+                document.getElementById('averageSentiment').textContent = `Overall Vibe: ${data.sentiment_summary}`;
+                document.getElementById('averageRating').textContent = `Average Rating: ${data.average_rating}`;
+            } catch (error) {
+                console.error('Error fetching sentiment:', error);
+                alert('Failed to fetch sentiment. Please try again.');
+            }
+        });
+
+        // Load movies on page load
+        fetchMovies();
+    </script>
+</body>
+</html>
