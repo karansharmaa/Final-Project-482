@@ -1,7 +1,7 @@
 Tomasz Grzesik 300171377 Karan Sharma 300192685
 Andrew Meier ____________ Kabir Kamboj 300195974
 
-#Technologies Used: 
+# Technologies Used: 
 1. Python 3.9
 2. Flask API
 3. Pandas Library
@@ -9,6 +9,7 @@ Andrew Meier ____________ Kabir Kamboj 300195974
 5. NLTK
 6. HTML/CSS
 7. JavaScript
+8. WhatsApp (to collaborate)
 
 # How to Run the Project
 
@@ -47,7 +48,7 @@ Andrew Meier ____________ Kabir Kamboj 300195974
          ```
 
 4. **Run the `app.py` File**
-   - After installing the dependencies, run the `app.py` file:
+   - After installing the dependencies and dataset, run the `app.py` file:
      ```bash
      python app.py
      ```
