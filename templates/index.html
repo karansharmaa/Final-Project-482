@@ -8,6 +8,7 @@
    
 </head>
 <body>
+    <!-- top half of page -->
     <header>
         <h1 class="logo">Media Reviews</h1>
     </header>
@@ -17,18 +18,19 @@
             <p>Explore aggregated reviews and ratings for your favorite movies.</p>
         </div>
 
-        <!-- Movie Selection -->
+        <!-- movie selection is done here in the dropdown menu-->
         <div class="form-container">
             <form id="movie-form">
                 <label for="movieSelect" class="form-label">Choose a Movie:</label>
                 <select id="movieSelect" name="movieSelect" class="form-input">
                     <option value="" disabled selected>Choose a movie</option>
                 </select>
+                <!-- button is pressed, results are given from script.js-->
                 <button type="submit" class="btn">Get Results</button>
             </form>
         </div>
 
-        <!-- Sentiment Analysis Results -->
+        <!-- the results from the sentiment analysis are accessed and presented on the webpage thru here -->
         <div id="result" class = "result-section">
             <h2 id = "movieTitle">What Do Reviewers Think?</h2>
             <p id="movieName"></p>
@@ -36,10 +38,10 @@
             <p id="averageRating"></p>
         </div>
     </main>
-    <footer>
+    <footer><!--yeah .... we reserved the rights to this ... i think ... -->
         <p>© 2024/25 Team 4 - COMP482-AB1. All rights reserved.</p>
     </footer>
-
+<!-- call the script -->
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

@@ -50,26 +50,27 @@ def calculate_average_sentiment(reviews_df):
     
     return avg_neg, avg_neu, avg_pos, avg_compound
 
-# Function to calculate average rating
+# calculates average rating
 def calculate_average_rating(reviews_df):
-    # Convert ratings to numeric for averaging
+    # convert ratings to a numeric value for averaging
     reviews_df['rating'] = pd.to_numeric(reviews_df['rating'], errors='coerce')
     return reviews_df['rating'].mean()
 
-# Function to get movie sentiment and metadata
+# gets movie sentiment and metadata
 def get_movie_sentiment(movie_name):
     reviews_df = process_movie_data(movie_name)
     
     if reviews_df is not None and not reviews_df.empty:
-        # Calculate sentiment
+        # calculation of the sentiment done here 
         avg_neg, avg_neu, avg_pos, avg_compound = calculate_average_sentiment(reviews_df)
         
-        # Calculate average rating
+        # calculation of average rating done here
         avg_rating = calculate_average_rating(reviews_df)
     else:
         avg_neg = avg_neu = avg_pos = avg_compound = 'No reviews found'
         avg_rating = 'N/A'
     
+    # results sent to their destination from here. 
     return {
         'movie_name': movie_name,
         'average_sentiment': {
