@@ -27,6 +27,7 @@ Andrew Meier ____________ Kabir Kamboj 300195974
       pip3 install -r requirements.txt
       pip3 install pandas
       pip3 install flask
+      pip3 install nltk
       ```
     
 3. **(Not Required but Would Be Nice) Create a Virtual Environment**
