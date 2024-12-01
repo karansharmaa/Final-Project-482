@@ -1,6 +1,14 @@
 Tomasz Grzesik 300171377 Karan Sharma 300192685
 Andrew Meier ____________ Kabir Kamboj 300195974
 
+#Technologies Used: 
+1. Python 3.9
+2. Flask API
+3. Pandas Library
+4. Visual Studio Code
+5. NLTK
+6. HTML/CSS
+7. JavaScript
 
 # How to Run the Project
 
@@ -16,7 +24,9 @@ Andrew Meier ____________ Kabir Kamboj 300195974
 3. **Install Dependencies:**
    - Download the required dependencies by running command:
       ```bash
-      pip install -r requirements.txt
+      pip3 install -r requirements.txt
+      pip3 install pandas
+      pip3 install flask
       ```
     
 3. **(Not Required but Would Be Nice) Create a Virtual Environment**
