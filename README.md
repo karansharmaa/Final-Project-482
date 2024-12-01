@@ -1,14 +1,15 @@
 Tomasz Grzesik 300171377 Karan Sharma 300192685
 Andrew Meier ____________ Kabir Kamboj 300195974
 
-#Technologies Used: 
+# Technologies Used: 
 1. Python 3.9
-2. Flask API
-3. Pandas Library
-4. Visual Studio Code
-5. NLTK
-6. HTML/CSS
-7. JavaScript
+2. HTML/CSS
+3. JavaScript
+4. Flask API
+5. Pandas Library
+6. Visual Studio Code
+7. NLTK
+8. WhatsApp (to collaborate)
 
 # How to Run the Project
 
@@ -27,6 +28,7 @@ Andrew Meier ____________ Kabir Kamboj 300195974
       pip3 install -r requirements.txt
       pip3 install pandas
       pip3 install flask
+      pip3 install nltk
       ```
     
 3. **(Not Required but Would Be Nice) Create a Virtual Environment**
@@ -46,7 +48,7 @@ Andrew Meier ____________ Kabir Kamboj 300195974
          ```
 
 4. **Run the `app.py` File**
-   - After installing the dependencies, run the `app.py` file:
+   - After installing the dependencies and dataset, run the `app.py` file:
      ```bash
      python app.py
      ```
