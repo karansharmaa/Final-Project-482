@@ -50,10 +50,12 @@ Andrew Meier ____________ Kabir Kamboj 300195974
       http://127.0.0.1:5000/
       ```
    - The expected look on screen will appear as: <br>
-   ![image](https://github.com/user-attachments/assets/49879899-2689-4e60-8bcb-8ad7a4db6857)
+   ![image](https://github.com/user-attachments/assets/b367156f-4479-4602-b824-65b7ad45135a)
+
 
    - The expected result once you have chosen your desired movie will be as follows:
-   ![image](https://github.com/user-attachments/assets/4f6b6453-1740-4c14-b789-1df297da7a79)
+   ![image](https://github.com/user-attachments/assets/93ce71a2-0aec-4e2e-9801-afdaeb65f246)
+
 
 
      
