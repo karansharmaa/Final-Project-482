@@ -3,12 +3,12 @@ Andrew Meier ____________ Kabir Kamboj 300195974
 
 # Technologies Used: 
 1. Python 3.9
-2. Flask API
-3. Pandas Library
-4. Visual Studio Code
-5. NLTK
-6. HTML/CSS
-7. JavaScript
+2. HTML/CSS
+3. JavaScript
+4. Flask API
+5. Pandas Library
+6. Visual Studio Code
+7. NLTK
 8. WhatsApp (to collaborate)
 
 # How to Run the Project
