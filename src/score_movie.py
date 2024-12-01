@@ -28,12 +28,12 @@ def process_movie_data(movie_name):
     except FileNotFoundError:
         return None
 
-# Function to calculate average sentiment of reviews
+#function to calculate average sentiment of reviews
 def calculate_average_sentiment(reviews_df):
     # Initialize totals
     total_neg, total_neu, total_pos, total_compound = 0, 0, 0, 0
     
-    # Loop through each review and calculate sentiment scores
+    #loop through each review and calculate sentiment scores
     for review in reviews_df['review']:
         sentiment_scores = sia.polarity_scores(review)
         total_neg += sentiment_scores['neg']
@@ -41,7 +41,7 @@ def calculate_average_sentiment(reviews_df):
         total_pos += sentiment_scores['pos']
         total_compound += sentiment_scores['compound']
     
-    # Calculate averages
+    #calculate averages
     num_reviews = len(reviews_df)
     avg_neg = total_neg / num_reviews
     avg_neu = total_neu / num_reviews
@@ -50,9 +50,9 @@ def calculate_average_sentiment(reviews_df):
     
     return avg_neg, avg_neu, avg_pos, avg_compound
 
-# calculates average rating
+#calculates average rating
 def calculate_average_rating(reviews_df):
-    # convert ratings to a numeric value for averaging
+    #convert ratings to a numeric value for averaging
     reviews_df['rating'] = pd.to_numeric(reviews_df['rating'], errors='coerce')
     return reviews_df['rating'].mean()
 
