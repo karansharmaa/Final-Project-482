@@ -1,7 +1,11 @@
-Tomasz Grzesik 300171377 Karan Sharma 300192685
-Andrew Meier ____________ Kabir Kamboj 300195974
+# Collaborators: 
+> Karan Sharma 300192685
+> Tomasz Grzesik 300171377
+> Andrew Meier ____________
+> Kabir Kamboj 300195974
 # Demo Video: 
-> https://www.youtube.com/watch?v=yJOTjSKP2Xo
+> [![Video Thumbnail](https://img.youtube.com/vi/yJOTjSKP2Xo/0.jpg)](https://www.youtube.com/watch?v=yJOTjSKP2Xo)
+
 # Technologies Used: 
 1. Python 3.9
 2. HTML/CSS
