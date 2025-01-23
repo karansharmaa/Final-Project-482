@@ -5,7 +5,7 @@
 > Kabir Kamboj 300195974
 # Demo Video: 
 > [![Video Thumbnail](https://img.youtube.com/vi/yJOTjSKP2Xo/0.jpg)](https://www.youtube.com/watch?v=yJOTjSKP2Xo)
-
+<br>https://www.youtube.com/watch?v=yJOTjSKP2Xo
 # Technologies Used: 
 1. Python 3.9
 2. HTML/CSS
